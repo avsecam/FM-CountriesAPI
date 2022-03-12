@@ -1,0 +1,47 @@
+include ../includes/meta.pug
+body
+	include ../includes/header.pug
+	main
+		button.backButton
+			i.fa-solid.fa-arrow-left
+			| Back
+		img.countryFlag(src=`${data.flags.svg}`)
+		.countryInfo
+			h2.countryName #{data.name.official}
+			.countryDetails
+				.countryDetailsMain
+					.detail
+						h3 Native Name: 
+						| #{Object.values(data.name.nativeName)[0].official}
+					.detail 
+						h3 Population: 
+						| #{data.population}
+					.detail 
+						h3 Region: 
+						| #{data.region}
+					.detail 
+						h3 Sub Region: 
+						| #{data.subregion}
+					.detail 
+						h3 Capital: 
+						| #{data.capital}
+				
+				.countryDetailsSub
+					.detail
+						h3 Top Level Domain: 
+						- var domains = data.tld
+						each domain in domains
+							| #{domain}, 
+					.detail
+						h3 Currencies: 
+						| #{Object.values(data.currencies)[0].name}
+					.detail
+						h3 Languages: 
+						| #{Object.values(data.languages)[0]}
+			
+			h3 Border Countries: 
+			.borderCountries
+				- var borderCountries = data?.borders
+				each borderCountry in borderCountries
+					button.borderCountry
+						| #{borderCountry}
