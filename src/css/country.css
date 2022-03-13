@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+.backButton {
+  padding: 1.5em;
+  height: 1rem;
+  margin: 2rem 0;
+  align-self: flex-start;
+}
+
+.countryDetails > * {
+  margin-bottom: 3rem;
+}
+
+.countryFlag {
+  width: 100%;
+}
+
+.countryInfo {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.countryName {
+  margin-bottom: 2rem;
+}
+
+.detail {
+  margin-bottom: 1em;
+}
+.detail > * {
+  font-size: 1.1rem;
+}
+.detail > h3 {
+  display: inline;
+}
+.detail > span {
+  font-weight: 600;
+}
+
+.borderCountries {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.borderCountries > * {
+  flex: 1;
+}
+
+.borderCountry {
+  display: flex;
+  justify-content: center;
+  margin: 0 0.5em;
+  border-radius: 0.5em;
+  height: 3em;
+  font-weight: 800;
+}
+
+@media screen and (min-aspect-ratio: 14/16) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 3rem;
+    margin-top: 5rem;
+  }
+
+  .backButton {
+    position: absolute;
+    top: 6rem;
+    right: 85vw;
+  }
+
+  .countryFlag {
+    width: 40vw;
+    max-width: 30rem;
+    margin-right: 5vw;
+  }
+
+  .countryInfo {
+    margin: 2rem 0;
+    max-width: 40rem;
+  }
+
+  .countryDetails {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .countryDetailsMain {
+    margin-right: 2rem;
+  }
+
+  .detail > * {
+    font-size: 1rem;
+  }
+
+  .borderCountriesWrapper {
+    display: flex;
+    align-items: center;
+  }
+  .borderCountriesWrapper > h3 {
+    white-space: nowrap;
+    margin-right: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=country.css.map */

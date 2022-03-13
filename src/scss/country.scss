@@ -1,0 +1,111 @@
+@use "var.scss";
+
+.backButton {
+	padding: 1.5em;
+	height: 1rem;
+	margin: 2rem 0;
+	align-self: flex-start;
+}
+
+.countryDetails > * {
+	margin-bottom: 3rem;
+}
+
+.countryFlag {
+	width: 100%;
+}
+
+.countryInfo {
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	text-align: left;
+}
+
+.countryName {
+	margin-bottom: 2rem;
+}
+
+.detail {
+	margin-bottom: 1em;
+
+	> * {
+		font-size: 1.1rem;
+	}
+
+	> h3 {
+		display: inline;
+	}
+
+	> span {
+		font-weight: var.$fontMedium;
+	}
+}
+
+.borderCountries {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	> * {
+		flex: 1;
+	}
+}
+
+.borderCountry {
+	display: flex;
+	justify-content: center;
+	margin: 0 0.5em;
+	border-radius: 0.5em;
+	height: 3em;
+	font-weight: var.$fontBold;
+}
+
+@media screen and (min-aspect-ratio: 14/16) {
+	main {
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 3rem;
+		margin-top: 5rem;
+	}
+
+	.backButton {
+		position: absolute;
+		top: 6rem;
+		right: 85vw;
+	}
+
+	.countryFlag {
+		width: 40vw;
+		max-width: 30rem;
+		margin-right: 5vw;
+	}
+
+	.countryInfo {
+		margin: 2rem 0;
+		max-width: 40rem;
+	}
+
+	.countryDetails {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.countryDetailsMain {
+		margin-right: 2rem;
+	}
+
+	.detail > * {
+		font-size: 1rem;
+	}
+
+	.borderCountriesWrapper {
+		display: flex;
+		align-items: center;
+
+		& > h3 {
+			white-space: nowrap;
+			margin-right: 0.5em;
+		}
+	}
+}

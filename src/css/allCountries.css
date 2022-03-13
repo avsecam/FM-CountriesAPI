@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+}
+
+.country {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.country > * {
+  padding: 0 2rem;
+}
+.country > img {
+  padding: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=allCountries.css.map */

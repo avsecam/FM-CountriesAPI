@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+// fonts
+$nunitoSans: "Nunito Sans", sans-serif;
+$fontLight: 300;
+$fontMedium: 600;
+$fontBold: 800;
+
+// colors
+$gray700: hsl(209, 23%, 22%); // dark mode elements
+$gray900: hsl(207, 26%, 17%); // dark mode bg
+
+$black: hsl(200, 15%, 8%); // light mode text
+$gray200: hsl(0, 0%, 52%); // light mode input
+$gray100: hsl(0, 0%, 98%); // light mode bg
+$white: hsl(0, 0%, 100%); // dark mode text / light mode elements

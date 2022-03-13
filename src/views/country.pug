@@ -1,10 +1,12 @@
 include ../includes/meta.pug
+style
+	include ../css/country.css
 body
 	include ../includes/header.pug
 	main
 		button.backButton
 			i.fa-solid.fa-arrow-left
-			| Back
+			span Back
 		img.countryFlag(src=`${data.flags.svg}`)
 		.countryInfo
 			h2.countryName #{data.name.official}
@@ -12,36 +14,40 @@ body
 				.countryDetailsMain
 					.detail
 						h3 Native Name: 
-						| #{Object.values(data.name.nativeName)[0].official}
+						span #{Object.values(data.name.nativeName)[0].official}
 					.detail 
 						h3 Population: 
-						| #{data.population}
+						span #{data.population}
 					.detail 
 						h3 Region: 
-						| #{data.region}
+						span #{data.region}
 					.detail 
 						h3 Sub Region: 
-						| #{data.subregion}
+						span #{data.subregion}
 					.detail 
 						h3 Capital: 
-						| #{data.capital}
+						span #{data.capital}
 				
 				.countryDetailsSub
 					.detail
 						h3 Top Level Domain: 
-						- var domains = data.tld
-						each domain in domains
-							| #{domain}, 
+						- var domains = data.tld;
+						span
+							each domain in domains
+								| #{domain}, 
 					.detail
 						h3 Currencies: 
-						| #{Object.values(data.currencies)[0].name}
+						span #{Object.values(data.currencies)[0].name}
 					.detail
 						h3 Languages: 
-						| #{Object.values(data.languages)[0]}
+						span #{Object.values(data.languages)[0]}
 			
-			h3 Border Countries: 
-			.borderCountries
-				- var borderCountries = data?.borders
-				each borderCountry in borderCountries
-					button.borderCountry
-						| #{borderCountry}
+			.borderCountriesWrapper
+				h3 Border Countries: 
+				.borderCountries
+					- var borderCountries = data?.borders
+					each borderCountry in borderCountries
+						button.borderCountry
+							span #{borderCountry}
+
+	script(src="country.js")

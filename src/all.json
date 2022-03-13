@@ -1,0 +1,1563 @@
+[
+	{
+		"name": {
+			"common": "Åland Islands",
+			"official": "Åland Islands",
+			"nativeName": {
+				"swe": {
+					"official": "Landskapet Åland",
+					"common": "Åland"
+				}
+			}
+		},
+		"tld": [
+			".ax"
+		],
+		"cca2": "AX",
+		"ccn3": "248",
+		"cca3": "ALA",
+		"independent": false,
+		"status": "officially-assigned",
+		"unMember": false,
+		"currencies": {
+			"EUR": {
+				"name": "Euro",
+				"symbol": "€"
+			}
+		},
+		"idd": {
+			"root": "+3",
+			"suffixes": [
+				"5818"
+			]
+		},
+		"capital": [
+			"Mariehamn"
+		],
+		"altSpellings": [
+			"AX",
+			"Aaland",
+			"Aland",
+			"Ahvenanmaa"
+		],
+		"region": "Europe",
+		"subregion": "Northern Europe",
+		"languages": {
+			"swe": "Swedish"
+		},
+		"translations": {
+			"ara": {
+				"official": "جزر أولاند",
+				"common": "جزر أولاند"
+			},
+			"ces": {
+				"official": "Ålandské ostrovy",
+				"common": "Ålandy"
+			},
+			"cym": {
+				"official": "Åland Islands",
+				"common": "Åland Islands"
+			},
+			"deu": {
+				"official": "Åland-Inseln",
+				"common": "Åland"
+			},
+			"est": {
+				"official": "Ahvenamaa maakond",
+				"common": "Ahvenamaa"
+			},
+			"fin": {
+				"official": "Ahvenanmaan maakunta",
+				"common": "Ahvenanmaa"
+			},
+			"fra": {
+				"official": "Ahvenanmaa",
+				"common": "Ahvenanmaa"
+			},
+			"hrv": {
+				"official": "Aland Islands",
+				"common": "Ålandski otoci"
+			},
+			"hun": {
+				"official": "Åland-szigetek",
+				"common": "Åland-szigetek"
+			},
+			"ita": {
+				"official": "Isole Åland",
+				"common": "Isole Aland"
+			},
+			"jpn": {
+				"official": "オーランド諸島",
+				"common": "オーランド諸島"
+			},
+			"kor": {
+				"official": "올란드 제도",
+				"common": "올란드 제도"
+			},
+			"nld": {
+				"official": "Åland eilanden",
+				"common": "Ålandeilanden"
+			},
+			"per": {
+				"official": "جزایر الند",
+				"common": "جزایر الند"
+			},
+			"pol": {
+				"official": "Wyspy Alandzkie",
+				"common": "Wyspy Alandzkie"
+			},
+			"por": {
+				"official": "Ilhas Åland",
+				"common": "Alândia"
+			},
+			"rus": {
+				"official": "Аландские острова",
+				"common": "Аландские острова"
+			},
+			"slk": {
+				"official": "Alandské ostrovy",
+				"common": "Alandy"
+			},
+			"spa": {
+				"official": "Islas Åland",
+				"common": "Alandia"
+			},
+			"swe": {
+				"official": "Åland",
+				"common": "Åland"
+			},
+			"urd": {
+				"official": "جزائر اولند",
+				"common": "جزائر اولند"
+			},
+			"zho": {
+				"official": "奥兰群岛",
+				"common": "奥兰群岛"
+			}
+		},
+		"latlng": [
+			60.116667,
+			19.9
+		],
+		"landlocked": false,
+		"area": 1580.0,
+		"demonyms": {
+			"eng": {
+				"f": "Ålandish",
+				"m": "Ålandish"
+			},
+			"fra": {
+				"f": "Ålandaise",
+				"m": "Ålandais"
+			}
+		},
+		"flag": "\uD83C\uDDE6\uD83C\uDDFD",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/ewFb3vYsfUmVCoSb8",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/1650407"
+		},
+		"population": 29458,
+		"car": {
+			"signs": [
+				""
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC+02:00"
+		],
+		"continents": [
+			"Europe"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/ax.png",
+			"svg": "https://flagcdn.com/ax.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/ax.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/ax.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				60.12,
+				19.9
+			]
+		}
+	},
+	{
+		"name": {
+			"common": "French Guiana",
+			"official": "Guiana",
+			"nativeName": {
+				"fra": {
+					"official": "Guyane",
+					"common": "Guyane française"
+				}
+			}
+		},
+		"tld": [
+			".gf"
+		],
+		"cca2": "GF",
+		"ccn3": "254",
+		"cca3": "GUF",
+		"independent": false,
+		"status": "officially-assigned",
+		"unMember": false,
+		"currencies": {
+			"EUR": {
+				"name": "Euro",
+				"symbol": "€"
+			}
+		},
+		"idd": {
+			"root": "+5",
+			"suffixes": [
+				"94"
+			]
+		},
+		"capital": [
+			"Cayenne"
+		],
+		"altSpellings": [
+			"GF",
+			"Guiana",
+			"Guyane"
+		],
+		"region": "Americas",
+		"subregion": "South America",
+		"languages": {
+			"fra": "French"
+		},
+		"translations": {
+			"ara": {
+				"official": "غويانا الفرنسية",
+				"common": "غويانا"
+			},
+			"ces": {
+				"official": "Francouzská Guyana",
+				"common": "Francouzská Guyana"
+			},
+			"cym": {
+				"official": "Guiana",
+				"common": "French Guiana"
+			},
+			"deu": {
+				"official": "Französisch-Guayana",
+				"common": "Französisch-Guayana"
+			},
+			"est": {
+				"official": "Guajaana departemang",
+				"common": "Prantsuse Guajaana"
+			},
+			"fin": {
+				"official": "Ranskan Guayana",
+				"common": "Ranskan Guayana"
+			},
+			"fra": {
+				"official": "Guyane",
+				"common": "Guyane"
+			},
+			"hrv": {
+				"official": "Gijana",
+				"common": "Francuska Gvajana"
+			},
+			"hun": {
+				"official": "Francia Guyana",
+				"common": "Francia Guyana"
+			},
+			"ita": {
+				"official": "Guiana",
+				"common": "Guyana francese"
+			},
+			"jpn": {
+				"official": "ギアナ",
+				"common": "フランス領ギアナ"
+			},
+			"kor": {
+				"official": "프랑스령 기아나",
+				"common": "프랑스령 기아나"
+			},
+			"nld": {
+				"official": "Guyana",
+				"common": "Frans-Guyana"
+			},
+			"per": {
+				"official": "گویان فرانسه",
+				"common": "گویان فرانسه"
+			},
+			"pol": {
+				"official": "Gujana Francuska",
+				"common": "Gujana Francuska"
+			},
+			"por": {
+				"official": "Guiana",
+				"common": "Guiana Francesa"
+			},
+			"rus": {
+				"official": "Гвиана",
+				"common": "Французская Гвиана"
+			},
+			"slk": {
+				"official": "Francúzska Guyana",
+				"common": "Guyana"
+			},
+			"spa": {
+				"official": "Guayana",
+				"common": "Guayana Francesa"
+			},
+			"swe": {
+				"official": "Franska Guyana",
+				"common": "Franska Guyana"
+			},
+			"urd": {
+				"official": "گیانا",
+				"common": "فرانسیسی گیانا"
+			},
+			"zho": {
+				"official": "法属圭亚那",
+				"common": "法属圭亚那"
+			}
+		},
+		"latlng": [
+			4.0,
+			-53.0
+		],
+		"landlocked": false,
+		"borders": [
+			"BRA",
+			"SUR"
+		],
+		"area": 83534.0,
+		"demonyms": {
+			"eng": {
+				"f": "Guianan",
+				"m": "Guianan"
+			},
+			"fra": {
+				"f": "Guyanaise",
+				"m": "Guyanais"
+			}
+		},
+		"flag": "\uD83C\uDDEC\uD83C\uDDEB",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/NJawFwMzG7YtCrVP7",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/2502058"
+		},
+		"population": 254541,
+		"car": {
+			"signs": [
+				"F"
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC-03:00"
+		],
+		"continents": [
+			"South America"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/gf.png",
+			"svg": "https://flagcdn.com/gf.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/gf.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/gf.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				4.94,
+				-52.33
+			]
+		},
+		"postalCode": {
+			"format": "#####",
+			"regex": "^((97|98)3\\d{2})$"
+		}
+	},
+	{
+		"name": {
+			"common": "Kiribati",
+			"official": "Independent and Sovereign Republic of Kiribati",
+			"nativeName": {
+				"eng": {
+					"official": "Independent and Sovereign Republic of Kiribati",
+					"common": "Kiribati"
+				},
+				"gil": {
+					"official": "Ribaberiki Kiribati",
+					"common": "Kiribati"
+				}
+			}
+		},
+		"tld": [
+			".ki"
+		],
+		"cca2": "KI",
+		"ccn3": "296",
+		"cca3": "KIR",
+		"cioc": "KIR",
+		"independent": true,
+		"status": "officially-assigned",
+		"unMember": true,
+		"currencies": {
+			"AUD": {
+				"name": "Australian dollar",
+				"symbol": "$"
+			},
+			"KID": {
+				"name": "Kiribati dollar",
+				"symbol": "$"
+			}
+		},
+		"idd": {
+			"root": "+6",
+			"suffixes": [
+				"86"
+			]
+		},
+		"capital": [
+			"South Tarawa"
+		],
+		"altSpellings": [
+			"KI",
+			"Republic of Kiribati",
+			"Ribaberiki Kiribati"
+		],
+		"region": "Oceania",
+		"subregion": "Micronesia",
+		"languages": {
+			"eng": "English",
+			"gil": "Gilbertese"
+		},
+		"translations": {
+			"ara": {
+				"official": "جمهورية كيريباتي",
+				"common": "كيريباتي"
+			},
+			"ces": {
+				"official": "Republika Kiribati",
+				"common": "Kiribati"
+			},
+			"cym": {
+				"official": "Independent and Sovereign Republic of Kiribati",
+				"common": "Kiribati"
+			},
+			"deu": {
+				"official": "Republik Kiribati",
+				"common": "Kiribati"
+			},
+			"est": {
+				"official": "Kiribati Vabariik",
+				"common": "Kiribati"
+			},
+			"fin": {
+				"official": "Kiribatin tasavalta",
+				"common": "Kiribati"
+			},
+			"fra": {
+				"official": "République de Kiribati",
+				"common": "Kiribati"
+			},
+			"hrv": {
+				"official": "Samostalne i suverene Republike Kiribati",
+				"common": "Kiribati"
+			},
+			"hun": {
+				"official": "Kiribati Köztársaság",
+				"common": "Kiribati"
+			},
+			"ita": {
+				"official": "Repubblica indipendente e sovrano di Kiribati",
+				"common": "Kiribati"
+			},
+			"jpn": {
+				"official": "キリバスの独立と主権共和国",
+				"common": "キリバス"
+			},
+			"kor": {
+				"official": "키리바시 공화국",
+				"common": "키리바시"
+			},
+			"nld": {
+				"official": "Onafhankelijke en soevereine republiek Kiribati",
+				"common": "Kiribati"
+			},
+			"per": {
+				"official": "جمهوری کیریباتی",
+				"common": "کیریباتی"
+			},
+			"pol": {
+				"official": "Republika Kiribati",
+				"common": "Kiribati"
+			},
+			"por": {
+				"official": "Independente e soberano República de Kiribati",
+				"common": "Kiribati"
+			},
+			"rus": {
+				"official": "Независимой и суверенной Республики Кирибати",
+				"common": "Кирибати"
+			},
+			"slk": {
+				"official": "Kiribatská republika",
+				"common": "Kiribati"
+			},
+			"spa": {
+				"official": "República Independiente y Soberano de Kiribati",
+				"common": "Kiribati"
+			},
+			"swe": {
+				"official": "Republiken Kiribati",
+				"common": "Kiribati"
+			},
+			"urd": {
+				"official": "سلطنت آزاد جمہوریہ کیریباتی",
+				"common": "کیریباتی"
+			},
+			"zho": {
+				"official": "基里巴斯共和国",
+				"common": "基里巴斯"
+			}
+		},
+		"latlng": [
+			1.41666666,
+			173.0
+		],
+		"landlocked": false,
+		"area": 811.0,
+		"demonyms": {
+			"eng": {
+				"f": "I-Kiribati",
+				"m": "I-Kiribati"
+			},
+			"fra": {
+				"f": "Kiribatienne",
+				"m": "Kiribatien"
+			}
+		},
+		"flag": "\uD83C\uDDF0\uD83C\uDDEE",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/NBfYvrndW4skAimw9",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/571178"
+		},
+		"population": 119446,
+		"gini": {
+			"2006": 37.0
+		},
+		"car": {
+			"signs": [
+				"KIR"
+			],
+			"side": "left"
+		},
+		"timezones": [
+			"UTC+12:00",
+			"UTC+13:00",
+			"UTC+14:00"
+		],
+		"continents": [
+			"Oceania"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/ki.png",
+			"svg": "https://flagcdn.com/ki.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/ki.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/ki.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				1.33,
+				172.98
+			]
+		}
+	},
+	{
+		"name": {
+			"common": "Benin",
+			"official": "Republic of Benin",
+			"nativeName": {
+				"fra": {
+					"official": "République du Bénin",
+					"common": "Bénin"
+				}
+			}
+		},
+		"tld": [
+			".bj"
+		],
+		"cca2": "BJ",
+		"ccn3": "204",
+		"cca3": "BEN",
+		"cioc": "BEN",
+		"independent": true,
+		"status": "officially-assigned",
+		"unMember": true,
+		"currencies": {
+			"XOF": {
+				"name": "West African CFA franc",
+				"symbol": "Fr"
+			}
+		},
+		"idd": {
+			"root": "+2",
+			"suffixes": [
+				"29"
+			]
+		},
+		"capital": [
+			"Porto-Novo"
+		],
+		"altSpellings": [
+			"BJ",
+			"Republic of Benin",
+			"République du Bénin"
+		],
+		"region": "Africa",
+		"subregion": "Western Africa",
+		"languages": {
+			"fra": "French"
+		},
+		"translations": {
+			"ara": {
+				"official": "جمهورية بنين",
+				"common": "بنين"
+			},
+			"ces": {
+				"official": "Beninská republika",
+				"common": "Benin"
+			},
+			"cym": {
+				"official": "Gweriniaeth Benin",
+				"common": "Benin"
+			},
+			"deu": {
+				"official": "Republik Benin",
+				"common": "Benin"
+			},
+			"est": {
+				"official": "Benini Vabariik",
+				"common": "Benin"
+			},
+			"fin": {
+				"official": "Beninin tasavalta",
+				"common": "Benin"
+			},
+			"fra": {
+				"official": "République du Bénin",
+				"common": "Bénin"
+			},
+			"hrv": {
+				"official": "Republika Benin",
+				"common": "Benin"
+			},
+			"hun": {
+				"official": "Benini Köztársaság",
+				"common": "Benin"
+			},
+			"ita": {
+				"official": "Repubblica del Benin",
+				"common": "Benin"
+			},
+			"jpn": {
+				"official": "ベナン共和国",
+				"common": "ベナン"
+			},
+			"kor": {
+				"official": "베냉 공화국",
+				"common": "베냉"
+			},
+			"nld": {
+				"official": "Republiek Benin",
+				"common": "Benin"
+			},
+			"per": {
+				"official": "جمهوری بنین",
+				"common": "بنین"
+			},
+			"pol": {
+				"official": "Benin",
+				"common": "Benin"
+			},
+			"por": {
+				"official": "República do Benin",
+				"common": "Benin"
+			},
+			"rus": {
+				"official": "Республика Бенин",
+				"common": "Бенин"
+			},
+			"slk": {
+				"official": "Beninská republika",
+				"common": "Benin"
+			},
+			"spa": {
+				"official": "República de Benin",
+				"common": "Benín"
+			},
+			"swe": {
+				"official": "Republiken Benin",
+				"common": "Benin"
+			},
+			"urd": {
+				"official": "جمہوریہ بینن",
+				"common": "بینن"
+			},
+			"zho": {
+				"official": "贝宁共和国",
+				"common": "贝宁"
+			}
+		},
+		"latlng": [
+			9.5,
+			2.25
+		],
+		"landlocked": false,
+		"borders": [
+			"BFA",
+			"NER",
+			"NGA",
+			"TGO"
+		],
+		"area": 112622.0,
+		"demonyms": {
+			"eng": {
+				"f": "Beninese",
+				"m": "Beninese"
+			},
+			"fra": {
+				"f": "Béninoise",
+				"m": "Béninois"
+			}
+		},
+		"flag": "\uD83C\uDDE7\uD83C\uDDEF",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/uMw1BsHEXQYgVFFu6",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/192784"
+		},
+		"population": 12123198,
+		"gini": {
+			"2015": 47.8
+		},
+		"fifa": "BEN",
+		"car": {
+			"signs": [
+				"DY"
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC+01:00"
+		],
+		"continents": [
+			"Africa"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/bj.png",
+			"svg": "https://flagcdn.com/bj.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/bj.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/bj.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				6.48,
+				2.62
+			]
+		}
+	},
+	{
+		"name": {
+			"common": "Lebanon",
+			"official": "Lebanese Republic",
+			"nativeName": {
+				"ara": {
+					"official": "الجمهورية اللبنانية",
+					"common": "لبنان"
+				},
+				"fra": {
+					"official": "République libanaise",
+					"common": "Liban"
+				}
+			}
+		},
+		"tld": [
+			".lb"
+		],
+		"cca2": "LB",
+		"ccn3": "422",
+		"cca3": "LBN",
+		"cioc": "LBN",
+		"independent": true,
+		"status": "officially-assigned",
+		"unMember": true,
+		"currencies": {
+			"LBP": {
+				"name": "Lebanese pound",
+				"symbol": "ل.ل"
+			}
+		},
+		"idd": {
+			"root": "+9",
+			"suffixes": [
+				"61"
+			]
+		},
+		"capital": [
+			"Beirut"
+		],
+		"altSpellings": [
+			"LB",
+			"Lebanese Republic",
+			"Al-Jumhūrīyah Al-Libnānīyah"
+		],
+		"region": "Asia",
+		"subregion": "Western Asia",
+		"languages": {
+			"ara": "Arabic",
+			"fra": "French"
+		},
+		"translations": {
+			"ara": {
+				"official": "الجمهورية اللبنانية",
+				"common": "لبنان"
+			},
+			"ces": {
+				"official": "Libanonská republika",
+				"common": "Libanon"
+			},
+			"cym": {
+				"official": "Lebanese Republic",
+				"common": "Lebanon"
+			},
+			"deu": {
+				"official": "Libanesische Republik",
+				"common": "Libanon"
+			},
+			"est": {
+				"official": "Liibanoni Vabariik",
+				"common": "Liibanon"
+			},
+			"fin": {
+				"official": "Libanonin tasavalta",
+				"common": "Libanon"
+			},
+			"fra": {
+				"official": "République libanaise",
+				"common": "Liban"
+			},
+			"hrv": {
+				"official": "Libanonska Republika",
+				"common": "Libanon"
+			},
+			"hun": {
+				"official": "Libanoni Köztársaság",
+				"common": "Libanon"
+			},
+			"ita": {
+				"official": "Repubblica libanese",
+				"common": "Libano"
+			},
+			"jpn": {
+				"official": "レバノン共和国",
+				"common": "レバノン"
+			},
+			"kor": {
+				"official": "레바논 공화국",
+				"common": "레바논"
+			},
+			"nld": {
+				"official": "Libanese Republiek",
+				"common": "Libanon"
+			},
+			"per": {
+				"official": "جمهوری لبنان",
+				"common": "لبنان"
+			},
+			"pol": {
+				"official": "Republika Libańska",
+				"common": "Liban"
+			},
+			"por": {
+				"official": "República Libanesa",
+				"common": "Líbano"
+			},
+			"rus": {
+				"official": "Ливанская Республика",
+				"common": "Ливан"
+			},
+			"slk": {
+				"official": "Libanonská republika",
+				"common": "Libanon"
+			},
+			"spa": {
+				"official": "República Libanesa",
+				"common": "Líbano"
+			},
+			"swe": {
+				"official": "Republiken Libanon",
+				"common": "Libanon"
+			},
+			"urd": {
+				"official": "جمہوریہ لبنان",
+				"common": "لبنان"
+			},
+			"zho": {
+				"official": "黎巴嫩共和国",
+				"common": "黎巴嫩"
+			}
+		},
+		"latlng": [
+			33.83333333,
+			35.83333333
+		],
+		"landlocked": false,
+		"borders": [
+			"ISR",
+			"SYR"
+		],
+		"area": 10452.0,
+		"demonyms": {
+			"eng": {
+				"f": "Lebanese",
+				"m": "Lebanese"
+			},
+			"fra": {
+				"f": "Libanaise",
+				"m": "Libanais"
+			}
+		},
+		"flag": "\uD83C\uDDF1\uD83C\uDDE7",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/Sz5VCU8UFBqMyTdc9",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/184843"
+		},
+		"population": 6825442,
+		"gini": {
+			"2011": 31.8
+		},
+		"fifa": "LBN",
+		"car": {
+			"signs": [
+				"RL"
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC+02:00"
+		],
+		"continents": [
+			"Asia"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/lb.png",
+			"svg": "https://flagcdn.com/lb.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/lb.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/lb.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				33.87,
+				35.5
+			]
+		},
+		"postalCode": {
+			"format": "#### ####|####",
+			"regex": "^(\\d{4}(\\d{4})?)$"
+		}
+	},
+	{
+		"name": {
+			"common": "Saint Martin",
+			"official": "Saint Martin",
+			"nativeName": {
+				"fra": {
+					"official": "Saint-Martin",
+					"common": "Saint-Martin"
+				}
+			}
+		},
+		"tld": [
+			".fr",
+			".gp"
+		],
+		"cca2": "MF",
+		"ccn3": "663",
+		"cca3": "MAF",
+		"independent": false,
+		"status": "officially-assigned",
+		"unMember": false,
+		"currencies": {
+			"EUR": {
+				"name": "Euro",
+				"symbol": "€"
+			}
+		},
+		"idd": {
+			"root": "+5",
+			"suffixes": [
+				"90"
+			]
+		},
+		"capital": [
+			"Marigot"
+		],
+		"altSpellings": [
+			"MF",
+			"Collectivity of Saint Martin",
+			"Collectivité de Saint-Martin",
+			"Saint Martin (French part)"
+		],
+		"region": "Americas",
+		"subregion": "Caribbean",
+		"languages": {
+			"fra": "French"
+		},
+		"translations": {
+			"ara": {
+				"official": "سانت مارتن",
+				"common": "سانت مارتن"
+			},
+			"ces": {
+				"official": "Svatý Martin",
+				"common": "Svatý Martin (Francie)"
+			},
+			"cym": {
+				"official": "Saint Martin",
+				"common": "Saint Martin"
+			},
+			"deu": {
+				"official": "Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"est": {
+				"official": "Saint-Martini ühendus",
+				"common": "Saint-Martin"
+			},
+			"fin": {
+				"official": "Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"fra": {
+				"official": "Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"hrv": {
+				"official": "Saint Martin",
+				"common": "Sveti Martin"
+			},
+			"hun": {
+				"official": "Saint-Martin Közösség",
+				"common": "Saint-Martin"
+			},
+			"ita": {
+				"official": "saint Martin",
+				"common": "Saint Martin"
+			},
+			"jpn": {
+				"official": "サンマルタン島",
+				"common": "サン・マルタン（フランス領）"
+			},
+			"kor": {
+				"official": "생마르탱",
+				"common": "생마르탱"
+			},
+			"nld": {
+				"official": "Saint Martin",
+				"common": "Saint-Martin"
+			},
+			"per": {
+				"official": "سن مارتن",
+				"common": "سن مارتن"
+			},
+			"pol": {
+				"official": "Wspólnota Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"por": {
+				"official": "saint Martin",
+				"common": "São Martinho"
+			},
+			"rus": {
+				"official": "Сен-Мартен",
+				"common": "Сен-Мартен"
+			},
+			"slk": {
+				"official": "Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"spa": {
+				"official": "Saint Martin",
+				"common": "Saint Martin"
+			},
+			"swe": {
+				"official": "Förvaltningsområdet Saint-Martin",
+				"common": "Saint-Martin"
+			},
+			"urd": {
+				"official": "سینٹ مارٹن",
+				"common": "سینٹ مارٹن"
+			},
+			"zho": {
+				"official": "圣马丁",
+				"common": "圣马丁"
+			}
+		},
+		"latlng": [
+			18.08333333,
+			-63.95
+		],
+		"landlocked": false,
+		"borders": [
+			"SXM"
+		],
+		"area": 53.0,
+		"demonyms": {
+			"eng": {
+				"f": "Saint Martin Islander",
+				"m": "Saint Martin Islander"
+			},
+			"fra": {
+				"f": "Saint-Martinoise",
+				"m": "Saint-Martinois"
+			}
+		},
+		"flag": "\uD83C\uDDF2\uD83C\uDDEB",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/P9ho9QuJ9EAR28JEA",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/63064"
+		},
+		"population": 38659,
+		"car": {
+			"signs": [
+				"F"
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC-04:00"
+		],
+		"continents": [
+			"North America"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/mf.png",
+			"svg": "https://flagcdn.com/mf.svg"
+		},
+		"coatOfArms": {},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				18.07,
+				-63.08
+			]
+		},
+		"postalCode": {
+			"format": "### ###"
+		}
+	},
+	{
+		"name": {
+			"common": "Jamaica",
+			"official": "Jamaica",
+			"nativeName": {
+				"eng": {
+					"official": "Jamaica",
+					"common": "Jamaica"
+				},
+				"jam": {
+					"official": "Jamaica",
+					"common": "Jamaica"
+				}
+			}
+		},
+		"tld": [
+			".jm"
+		],
+		"cca2": "JM",
+		"ccn3": "388",
+		"cca3": "JAM",
+		"cioc": "JAM",
+		"independent": true,
+		"status": "officially-assigned",
+		"unMember": true,
+		"currencies": {
+			"JMD": {
+				"name": "Jamaican dollar",
+				"symbol": "$"
+			}
+		},
+		"idd": {
+			"root": "+1",
+			"suffixes": [
+				"876"
+			]
+		},
+		"capital": [
+			"Kingston"
+		],
+		"altSpellings": [
+			"JM"
+		],
+		"region": "Americas",
+		"subregion": "Caribbean",
+		"languages": {
+			"eng": "English",
+			"jam": "Jamaican Patois"
+		},
+		"translations": {
+			"ara": {
+				"official": "جامايكا",
+				"common": "جامايكا"
+			},
+			"ces": {
+				"official": "Jamajka",
+				"common": "Jamajka"
+			},
+			"cym": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"deu": {
+				"official": "Jamaika",
+				"common": "Jamaika"
+			},
+			"est": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"fin": {
+				"official": "Jamaika",
+				"common": "Jamaika"
+			},
+			"fra": {
+				"official": "Jamaïque",
+				"common": "Jamaïque"
+			},
+			"hrv": {
+				"official": "Jamajka",
+				"common": "Jamajka"
+			},
+			"hun": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"ita": {
+				"official": "Giamaica",
+				"common": "Giamaica"
+			},
+			"jpn": {
+				"official": "ジャマイカ",
+				"common": "ジャマイカ"
+			},
+			"kor": {
+				"official": "자메이카",
+				"common": "자메이카"
+			},
+			"nld": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"per": {
+				"official": "جامائیکا",
+				"common": "جامائیکا"
+			},
+			"pol": {
+				"official": "Jamajka",
+				"common": "Jamajka"
+			},
+			"por": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"rus": {
+				"official": "Ямайка",
+				"common": "Ямайка"
+			},
+			"slk": {
+				"official": "Jamajka",
+				"common": "Jamajka"
+			},
+			"spa": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"swe": {
+				"official": "Jamaica",
+				"common": "Jamaica"
+			},
+			"urd": {
+				"official": "جمیکا",
+				"common": "جمیکا"
+			},
+			"zho": {
+				"official": "牙买加",
+				"common": "牙买加"
+			}
+		},
+		"latlng": [
+			18.25,
+			-77.5
+		],
+		"landlocked": false,
+		"area": 10991.0,
+		"demonyms": {
+			"eng": {
+				"f": "Jamaican",
+				"m": "Jamaican"
+			},
+			"fra": {
+				"f": "Jamaïcaine",
+				"m": "Jamaïcain"
+			}
+		},
+		"flag": "\uD83C\uDDEF\uD83C\uDDF2",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/Z8mQ6jxnRQKFwJy9A",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/555017"
+		},
+		"population": 2961161,
+		"gini": {
+			"2004": 45.5
+		},
+		"fifa": "JAM",
+		"car": {
+			"signs": [
+				"JA"
+			],
+			"side": "left"
+		},
+		"timezones": [
+			"UTC-05:00"
+		],
+		"continents": [
+			"North America"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/jm.png",
+			"svg": "https://flagcdn.com/jm.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/jm.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/jm.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				17.99702,
+				-76.79358
+			]
+		}
+	},
+	{
+		"name": {
+			"common": "Montenegro",
+			"official": "Montenegro",
+			"nativeName": {
+				"cnr": {
+					"official": "Црна Гора",
+					"common": "Црна Гора"
+				}
+			}
+		},
+		"tld": [
+			".me"
+		],
+		"cca2": "ME",
+		"ccn3": "499",
+		"cca3": "MNE",
+		"cioc": "MNE",
+		"independent": true,
+		"status": "officially-assigned",
+		"unMember": true,
+		"currencies": {
+			"EUR": {
+				"name": "Euro",
+				"symbol": "€"
+			}
+		},
+		"idd": {
+			"root": "+3",
+			"suffixes": [
+				"82"
+			]
+		},
+		"capital": [
+			"Podgorica"
+		],
+		"altSpellings": [
+			"ME",
+			"Crna Gora"
+		],
+		"region": "Europe",
+		"subregion": "Southeast Europe",
+		"languages": {
+			"cnr": "Montenegrin"
+		},
+		"translations": {
+			"ara": {
+				"official": "الجبل الاسود",
+				"common": "الجبل الاسود"
+			},
+			"ces": {
+				"official": "Černá Hora",
+				"common": "Černá Hora"
+			},
+			"cym": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"deu": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"est": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"fin": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"fra": {
+				"official": "Monténégro",
+				"common": "Monténégro"
+			},
+			"hrv": {
+				"official": "Crna Gora",
+				"common": "Crna Gora"
+			},
+			"hun": {
+				"official": "Montenegró",
+				"common": "Montenegró"
+			},
+			"ita": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"jpn": {
+				"official": "モンテネグロ",
+				"common": "モンテネグロ"
+			},
+			"kor": {
+				"official": "몬테네그로",
+				"common": "몬테네그로"
+			},
+			"nld": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"per": {
+				"official": "مونته‌نگرو",
+				"common": "مونته‌نگرو"
+			},
+			"pol": {
+				"official": "Czarnogóra",
+				"common": "Czarnogóra"
+			},
+			"por": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"rus": {
+				"official": "Черногория",
+				"common": "Черногория"
+			},
+			"slk": {
+				"official": "Čierna Hora",
+				"common": "Čierna Hora"
+			},
+			"spa": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"swe": {
+				"official": "Montenegro",
+				"common": "Montenegro"
+			},
+			"urd": {
+				"official": "مونٹینیگرو",
+				"common": "مونٹینیگرو"
+			},
+			"zho": {
+				"official": "黑山",
+				"common": "黑山"
+			}
+		},
+		"latlng": [
+			42.5,
+			19.3
+		],
+		"landlocked": false,
+		"borders": [
+			"ALB",
+			"BIH",
+			"HRV",
+			"UNK",
+			"SRB"
+		],
+		"area": 13812.0,
+		"demonyms": {
+			"eng": {
+				"f": "Montenegrin",
+				"m": "Montenegrin"
+			},
+			"fra": {
+				"f": "Monténégrine",
+				"m": "Monténégrin"
+			}
+		},
+		"flag": "\uD83C\uDDF2\uD83C\uDDEA",
+		"maps": {
+			"googleMaps": "https://goo.gl/maps/4THX1fM7WqANuPbB8",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/53296"
+		},
+		"population": 621718,
+		"gini": {
+			"2016": 38.5
+		},
+		"fifa": "MNE",
+		"car": {
+			"signs": [
+				"SCG"
+			],
+			"side": "right"
+		},
+		"timezones": [
+			"UTC+01:00"
+		],
+		"continents": [
+			"Europe"
+		],
+		"flags": {
+			"png": "https://flagcdn.com/w320/me.png",
+			"svg": "https://flagcdn.com/me.svg"
+		},
+		"coatOfArms": {
+			"png": "https://mainfacts.com/media/images/coats_of_arms/me.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/me.svg"
+		},
+		"startOfWeek": "monday",
+		"capitalInfo": {
+			"latlng": [
+				42.43,
+				19.27
+			]
+		},
+		"postalCode": {
+			"format": "#####",
+			"regex": "^(\\d{5})$"
+		}
+	}
+]

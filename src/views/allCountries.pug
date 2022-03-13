@@ -1,5 +1,35 @@
 include ../includes/meta.pug
+style 
+	include ../css/allCountries.css
 body
 	include ../includes/header.pug
-	.countryDiv 
-		h2 #{data.name.common}
+	main
+		input.searchBar(type="text")
+		.filterDropdown
+			h2 Filter by Region
+			ul
+				li Africa
+				li America
+				li Asia
+				li Europe
+				li Oceania
+
+		.countries
+			//- p #{JSON.stringify(data)}
+			each country in data
+				.country
+					img(src=`${country.flags.svg}`)
+					h2 #{country.name.common}
+					.countryInfo
+						.detail
+							h3 Population:
+							span #{country.population}
+						.detail
+							h3 Region:
+							span #{country.region}
+						.detail
+							h3 Capital:
+							span
+								each capital in country.capital
+									| #{capital},
+							
