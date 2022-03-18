@@ -15,7 +15,22 @@ let jsonData
 app.get("/", async (req, res) => {
 	// jsonData = await axios.get("https://restcountries.com/v3.1/all")
 	jsonData = sampleJsonAll
-	res.render("allCountries", {data: jsonData})
+	
+
+	// pagination
+	const countriesPerPage = 6;
+	const pageCount = Math.ceil(jsonData.length / countriesPerPage)
+	let pageNumber = req.query.page ?? 0
+	if (pageNumber > pageCount) pageNumber = pageCount
+	res.render(
+		"allCountries",
+		{
+			data: jsonData.slice(pageNumber * countriesPerPage, (pageNumber * countriesPerPage) + 6),
+			pageNumber,
+			previous: (pageNumber > 0) ? true : false,
+			next: (pageNumber != pageCount - 1) ? true : false
+		}
+	)
 })
 
 app.get("/:country", async (req, res) => {

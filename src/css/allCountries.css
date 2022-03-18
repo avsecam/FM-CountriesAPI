@@ -1,15 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+main {
+  padding-top: 4rem;
+}
+
+.searchBarDiv {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(128, 128, 128, 0.1);
+  background: white;
+}
+.searchBarDiv > i {
+  position: absolute;
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchBar {
+  border: none;
+  height: 3.5rem;
+  margin-left: 6rem;
+  width: calc(100% - 6rem);
+  border-radius: 0.2rem;
+}
+
+.filterDropdown {
+  position: relative;
+  background-color: white;
+  font-weight: 600;
+  align-self: flex-start;
+  margin: 2rem 0;
+}
+.filterDropdown > h2 {
+  font-size: 1rem;
+  font-weight: inherit;
+  margin: 0;
+  padding: 1rem 1rem;
+  padding-right: 5rem;
+  box-shadow: 0 0 1rem 0 rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+.filterDropdown > h2::after {
+  content: "\f078";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 2rem;
+}
+.filterDropdown > ul {
+  position: absolute;
+  top: 2.8rem;
+  list-style-type: none;
+  padding: 0 1rem;
+  height: 0;
+  width: calc(100% - 2rem);
+  background-color: white;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.filterDropdown > ul > li {
+  cursor: pointer;
+  margin: 0.3em;
+  transition: 0.2s;
+}
+.filterDropdown > ul > li:hover {
+  color: white;
+  background-color: #2b3945;
+}
+.filterDropdown > ul.open {
+  height: 10.2rem;
+  padding: 1rem;
+}
+
 .countries {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin: 0 2rem;
 }
 
 .country {
-  background: white;
   border-radius: 0.5rem;
+  width: min(100%, 30rem);
   overflow: hidden;
   margin-bottom: 3rem;
+  background-color: white;
+  box-shadow: 0 0 1rem 0 white;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.country:hover {
+  background: white;
+  transform: translateY(-0.2em);
+  box-shadow: -0.3em -0.3em 0.3em 0 white, 0.1em 0.1em 0.3em 0 rgba(0, 0, 0, 0.1), inset -0.2em -0.2em 0.3em -0.1em rgba(0, 0, 0, 0.1);
+}
+.country:active {
+  transform: translateY(0);
+  box-shadow: inset -0.3em -0.3em 0.5em 0 white, inset 0.2em 0.2em 0.3em 0 rgba(0, 0, 0, 0.1);
 }
 .country > * {
   padding: 0 2rem;
@@ -17,6 +105,29 @@
 .country > img {
   padding: 0;
   width: 100%;
+}
+.country:last-of-type {
+  margin-bottom: 0;
+}
+
+.countryInfo {
+  margin-bottom: 2rem;
+}
+
+.detail > h3 {
+  display: inline;
+}
+.detail > span {
+  font-weight: 600;
+}
+
+.pageNavigation {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.pageNavigation > button {
+  padding: 0.5rem 1.5rem;
 }
 
 /*# sourceMappingURL=allCountries.css.map */

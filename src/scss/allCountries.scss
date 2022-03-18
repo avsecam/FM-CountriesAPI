@@ -1,24 +1,140 @@
 @use "var.scss";
 
 
+main {
+	padding-top: 4rem;
+}
+
+.searchBarDiv {
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, 10%);
+	background: var.$white;
+
+	> i {
+		position: absolute;
+		left: 2.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.searchBar {
+	border: none;
+	height: 3.5rem;
+	margin-left: 6rem;
+	width: calc(100% - 6rem);
+	border-radius: 0.2rem;
+}
+
+.filterDropdown {
+	position: relative;
+	background-color: var.$white;
+	font-weight: var.$fontMedium;
+	align-self: flex-start;
+	margin: 2rem 0;
+	
+	> h2 {
+		font-size: 1rem;
+		font-weight: inherit;
+		margin: 0;
+		padding: 1rem 1rem;
+		padding-right: 5rem;
+		box-shadow: 0 0 1rem 0 hsla(0, 0%, 50%, 10%);
+		cursor: pointer;
+
+		&::after {
+			content: "\f078";
+			width: 1rem;
+			height: 1rem;
+			position: absolute;
+			right: 2rem;
+		}
+	}
+	
+	> ul {
+		position: absolute;
+		top: 2.8rem;
+		list-style-type: none;
+		padding: 0 1rem;
+		height: 0;
+		width: calc(100% - 2rem);
+		background-color: var.$white;
+		z-index: 1;
+		overflow: hidden;
+		transition: 0.5s;
+
+		> li {
+			cursor: pointer;
+			margin: 0.3em;
+			transition: 0.2s;
+
+			&:hover {
+				color: var.$white;
+				background-color: var.$gray700;
+			}
+		}
+
+		&.open {
+			height: 10.2rem;
+			padding: 1rem;
+		}
+	}
+}
+
+
 .countries {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 	margin: 0 2rem;
 }
 
 .country {
-	background: var.$white;
 	border-radius: 0.5rem;
+	width: min(100%, 30rem);
 	overflow: hidden;
 	margin-bottom: 3rem;
+	background-color: var.$white;
+	box-shadow: 0 0 1rem 0 var.$white;
+	cursor: pointer;
+	@include var.neumorphic();
 
-	& > * {
+	> * {
 		padding: 0 2rem;
 	}
 
-	& > img {
+	> img {
 		padding: 0;
 		width: 100%;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.countryInfo {
+	margin-bottom: 2rem;
+}
+
+.detail {
+
+	> h3 {
+		display: inline;
+	}
+	
+	> span {
+		font-weight: var.$fontMedium;
+	}
+}
+
+.pageNavigation {
+	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
+
+	> button {
+		padding: 0.5rem 1.5rem;
 	}
 }

@@ -3,8 +3,10 @@ style
 	include ../css/allCountries.css
 body
 	include ../includes/header.pug
-	main
-		input.searchBar(type="text")
+	main(data-page=pageNumber)
+		.searchBarDiv
+			input.searchBar(type="text" placeholder="Search for a country...")
+			i.fa-regular.fa-eye
 		.filterDropdown
 			h2 Filter by Region
 			ul
@@ -13,6 +15,7 @@ body
 				li Asia
 				li Europe
 				li Oceania
+				li All
 
 		.countries
 			//- p #{JSON.stringify(data)}
@@ -22,14 +25,23 @@ body
 					h2 #{country.name.common}
 					.countryInfo
 						.detail
-							h3 Population:
+							h3 Population: 
 							span #{country.population}
 						.detail
-							h3 Region:
+							h3 Region: 
 							span #{country.region}
 						.detail
-							h3 Capital:
+							h3 Capital: 
 							span
 								each capital in country.capital
 									| #{capital},
-							
+
+		.pageNavigation
+			if previous
+				button.previousPage
+					| Previous
+			if next
+				button.nextPage
+					| Next
+
+	script(src="allCountries.js")
