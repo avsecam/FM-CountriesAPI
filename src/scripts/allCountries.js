@@ -55,6 +55,23 @@ countries.forEach((country) => {
 })
 
 
+const searchBar = document.querySelector("input.searchBar")
+const searchButton = document.querySelector(".searchBarDiv > i")
+searchBar.addEventListener("keyup", (e) => {
+	if (e.keyCode === 13) {
+		e.preventDefault()
+		searchButton.click()
+	}
+})
+searchButton.addEventListener("click", () => {
+	const searchInput = searchBar.value
+	if (!searchInput) return
+	path = String(window.location.origin)
+	window.location.assign(`${path}/country/${searchInput}`)
+})
+
+
+
 const regionFilters = document.querySelectorAll("ul > li")
 regionFilters.forEach((regionFilter) => {
 	regionFilter.addEventListener("click", () => {

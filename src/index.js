@@ -55,15 +55,15 @@ app.get("/region/:region", async (req, res) => {
 })
 
 app.get("/country/:country", async (req, res) => {
-	// jsonData = await axios.get(`https://restcountries.com/v3.1/name/${req.params.country}`)
-	jsonData = sampleJsonSingle
-	res.render("country", {data: jsonData[0]})
-	// res.render(
-	// 	"country",
-	// 	{
-	// 		data: jsonData.data[0]
-	// 	}
-	// )
+	jsonData = await axios.get(`https://restcountries.com/v3.1/name/${req.params.country}`)
+	// jsonData = sampleJsonSingle
+	// res.render("country", {data: jsonData[0]})
+	res.render(
+		"country",
+		{
+			data: jsonData.data[0]
+		}
+	)
 })
 
 app.listen(3000, () => {console.log("Port 3000")})
