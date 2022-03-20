@@ -3,7 +3,7 @@ style
 	include ../css/country.css
 body
 	include ../includes/header.pug
-	main
+	main(data-previous=previous)
 		button.backButton
 			i.fa-solid.fa-arrow-left
 			span Back
@@ -46,8 +46,9 @@ body
 				h3 Border Countries: 
 				.borderCountries
 					- var borderCountries = data?.borders
-					each borderCountry in borderCountries
-						button.borderCountry
-							span #{borderCountry}
+					if borderCountries
+						each borderCountry in borderCountries
+							button.borderCountry
+								span #{borderCountry}
 
-	script(src="country.js")
+	script(src="../country.js" type="module")

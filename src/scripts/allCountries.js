@@ -1,3 +1,6 @@
+import { removeTrailingComma } from "./utility.js"
+
+
 const path = window.location.href.split("?")[0]
 
 const filterDropdown = document.querySelector(".filterDropdown")
@@ -15,22 +18,50 @@ if (previous) previous.addEventListener("click", () => {
 	navigatePages("previous")
 })
 if (next) next.addEventListener("click", () => {
+	alert(path)
 	navigatePages("next")
 })
 
 function navigatePages(direction) {
 	// remove querystring
+	const pageQueryPattern = /page=[0-9]/
+	const newPageNumber = (direction === "next") ? pageNumber + 1 : pageNumber - 1
 
-	if (direction === "next") window.location.assign(`${path}?page=${pageNumber + 1}`)
-	else window.location.assign(`${path}?page=${pageNumber - 1}`)
+	let link
+	if (window.location.href.match(pageQueryPattern)) {
+		link = window.location.href.replace(pageQueryPattern, `page=${newPageNumber}`)
+	} else {
+		link = `${path}?page=${newPageNumber}`
+	}
+	window.location.assign(link)
 }
 
 
 const countries = document.querySelectorAll(".country")
-
 countries.forEach((country) => {
+	// add link
 	country.addEventListener("click", () => {
-		const countryName = country.querySelector("h2")
-		window.location.assign(`${path}${countryName}`)
+		const countryName = country.querySelector("h2").innerText
+		window.location.assign(`${path}country/${countryName}`)
+	})
+
+	// add commas to number
+	const population = country.querySelector(".detail:first-of-type > span")
+	population.innerText = Number(population.innerText).toLocaleString()
+
+	// remove trailing comma
+	const capitals = country.querySelector(".detail:last-of-type > span")
+	removeTrailingComma(capitals)
+})
+
+
+const regionFilters = document.querySelectorAll("ul > li")
+regionFilters.forEach((regionFilter) => {
+	regionFilter.addEventListener("click", () => {
+		const regionName = regionFilter.innerText.toLowerCase()
+
+		alert(`${path}region/${regionName}`)
+		if (regionName === "all") window.location.assign(`${path}`)
+		else window.location.assign(`${path}region/africa`)
 	})
 })

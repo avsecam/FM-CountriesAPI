@@ -51,9 +51,9 @@ main {
   position: absolute;
   top: 2.8rem;
   list-style-type: none;
-  padding: 0 1rem;
+  padding: 0;
   height: 0;
-  width: calc(100% - 2rem);
+  width: 100%;
   background-color: white;
   z-index: 1;
   overflow: hidden;
@@ -61,7 +61,9 @@ main {
 }
 .filterDropdown > ul > li {
   cursor: pointer;
-  margin: 0.3em;
+  margin: 0.3em 0;
+  padding: 0.5em 0;
+  padding-left: 1em;
   transition: 0.2s;
 }
 .filterDropdown > ul > li:hover {
@@ -69,8 +71,7 @@ main {
   background-color: #2b3945;
 }
 .filterDropdown > ul.open {
-  height: 10.2rem;
-  padding: 1rem;
+  height: 16.5rem;
 }
 
 .countries {
@@ -81,23 +82,23 @@ main {
 }
 
 .country {
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   width: min(100%, 30rem);
   overflow: hidden;
   margin-bottom: 3rem;
-  background-color: white;
-  box-shadow: 0 0 1rem 0 white;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  background: linear-gradient(160deg, white, rgba(0, 0, 0, 0.02));
+  transform: translateY(-0.1em);
+  box-shadow: -0.2em -0.2em 1.2em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s, transform 0.1s;
 }
 .country:hover {
-  background: white;
-  transform: translateY(-0.2em);
-  box-shadow: -0.3em -0.3em 0.3em 0 white, 0.1em 0.1em 0.3em 0 rgba(0, 0, 0, 0.1), inset -0.2em -0.2em 0.3em -0.1em rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  box-shadow: -0.1em -0.1em 0.4em 0 white, 0.1em 0.1em 0.4em 0 rgba(0, 0, 0, 0.1);
 }
 .country:active {
-  transform: translateY(0);
-  box-shadow: inset -0.3em -0.3em 0.5em 0 white, inset 0.2em 0.2em 0.3em 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(0.1em);
+  box-shadow: inset -0.3em -0.3em 0.5em 0 rgba(255, 255, 255, 0.5), inset 0.2em 0.2em 0.3em 0 rgba(0, 0, 0, 0.1);
 }
 .country > * {
   padding: 0 2rem;

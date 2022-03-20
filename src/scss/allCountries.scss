@@ -56,9 +56,9 @@ main {
 		position: absolute;
 		top: 2.8rem;
 		list-style-type: none;
-		padding: 0 1rem;
+		padding: 0;
 		height: 0;
-		width: calc(100% - 2rem);
+		width: 100%;
 		background-color: var.$white;
 		z-index: 1;
 		overflow: hidden;
@@ -66,7 +66,9 @@ main {
 
 		> li {
 			cursor: pointer;
-			margin: 0.3em;
+			margin: 0.3em 0;
+			padding: 0.5em 0;
+			padding-left: 1em;
 			transition: 0.2s;
 
 			&:hover {
@@ -76,8 +78,7 @@ main {
 		}
 
 		&.open {
-			height: 10.2rem;
-			padding: 1rem;
+			height: 16.5rem;
 		}
 	}
 }
@@ -91,12 +92,10 @@ main {
 }
 
 .country {
-	border-radius: 0.5rem;
+	border-radius: 2rem;
 	width: min(100%, 30rem);
 	overflow: hidden;
 	margin-bottom: 3rem;
-	background-color: var.$white;
-	box-shadow: 0 0 1rem 0 var.$white;
 	cursor: pointer;
 	@include var.neumorphic();
 
