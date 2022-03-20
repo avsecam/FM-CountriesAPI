@@ -7,7 +7,7 @@ main {
   width: 100%;
   position: relative;
   box-shadow: 0 0 1rem 0 rgba(128, 128, 128, 0.1);
-  background: white;
+  background: #fafafa;
 }
 .searchBarDiv > i {
   position: absolute;
@@ -18,18 +18,21 @@ main {
 
 .searchBar {
   border: none;
+  background-color: #fafafa;
   height: 3.5rem;
   margin-left: 6rem;
   width: calc(100% - 6rem);
   border-radius: 0.2rem;
+  outline-color: #858585;
 }
 
 .filterDropdown {
   position: relative;
-  background-color: white;
+  background-color: #fafafa;
   font-weight: 600;
   align-self: flex-start;
   margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 .filterDropdown > h2 {
   font-size: 1rem;
@@ -54,7 +57,7 @@ main {
   padding: 0;
   height: 0;
   width: 100%;
-  background-color: white;
+  background-color: #fafafa;
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
@@ -67,7 +70,7 @@ main {
   transition: 0.2s;
 }
 .filterDropdown > ul > li:hover {
-  color: white;
+  color: #fafafa;
   background-color: #2b3945;
 }
 .filterDropdown > ul.open {
@@ -82,14 +85,15 @@ main {
 }
 
 .country {
+  position: relative;
   border-radius: 2rem;
   width: min(100%, 30rem);
   overflow: hidden;
   margin-bottom: 3rem;
   cursor: pointer;
-  background: linear-gradient(160deg, white, rgba(0, 0, 0, 0.02));
+  background: linear-gradient(160deg, #fafafa, rgba(0, 0, 0, 0.02));
   transform: translateY(-0.1em);
-  box-shadow: -0.2em -0.2em 1.2em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -0.2em -0.2em 1em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s, transform 0.1s;
 }
 .country:hover {
@@ -100,15 +104,38 @@ main {
   transform: translateY(0.1em);
   box-shadow: inset -0.3em -0.3em 0.5em 0 rgba(255, 255, 255, 0.5), inset 0.2em 0.2em 0.3em 0 rgba(0, 0, 0, 0.1);
 }
+.country::after {
+  content: "VIEW COUNTRY";
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 65%;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.country:hover::after {
+  opacity: 100%;
+}
 .country > * {
   padding: 0 2rem;
 }
 .country > img {
   padding: 0;
   width: 100%;
+  transition: 0.3s;
 }
 .country:last-of-type {
   margin-bottom: 0;
+}
+.country:hover > img {
+  filter: brightness(0.8);
 }
 
 .countryInfo {
@@ -124,6 +151,7 @@ main {
 
 .pageNavigation {
   margin: 2rem;
+  width: calc(100% - 4rem);
   display: flex;
   justify-content: space-between;
 }

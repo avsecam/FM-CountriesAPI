@@ -1,7 +1,7 @@
 import { removeTrailingComma } from "./utility.js"
 
 
-const path = window.location.href.split("?")[0]
+let path = window.location.href.split("?")[0]
 
 const filterDropdown = document.querySelector(".filterDropdown")
 const dropdownList = filterDropdown.querySelector("ul")
@@ -18,7 +18,6 @@ if (previous) previous.addEventListener("click", () => {
 	navigatePages("previous")
 })
 if (next) next.addEventListener("click", () => {
-	alert(path)
 	navigatePages("next")
 })
 
@@ -42,7 +41,8 @@ countries.forEach((country) => {
 	// add link
 	country.addEventListener("click", () => {
 		const countryName = country.querySelector("h2").innerText
-		window.location.assign(`${path}country/${countryName}`)
+		path = String(window.location.origin)
+		window.location.assign(`${path}/country/${countryName}`)
 	})
 
 	// add commas to number
@@ -59,9 +59,8 @@ const regionFilters = document.querySelectorAll("ul > li")
 regionFilters.forEach((regionFilter) => {
 	regionFilter.addEventListener("click", () => {
 		const regionName = regionFilter.innerText.toLowerCase()
-
-		alert(`${path}region/${regionName}`)
+		path = String(window.location.origin)
 		if (regionName === "all") window.location.assign(`${path}`)
-		else window.location.assign(`${path}region/africa`)
+		else window.location.assign(`${path}/region/${regionName}`)
 	})
 })

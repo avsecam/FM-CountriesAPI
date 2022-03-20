@@ -21,10 +21,12 @@ main {
 
 .searchBar {
 	border: none;
+	background-color: var.$white;
 	height: 3.5rem;
 	margin-left: 6rem;
 	width: calc(100% - 6rem);
 	border-radius: 0.2rem;
+	outline-color: var.$gray200;
 }
 
 .filterDropdown {
@@ -33,6 +35,7 @@ main {
 	font-weight: var.$fontMedium;
 	align-self: flex-start;
 	margin: 2rem 0;
+	margin-bottom: 3rem;
 	
 	> h2 {
 		font-size: 1rem;
@@ -92,12 +95,34 @@ main {
 }
 
 .country {
+	position: relative;
 	border-radius: 2rem;
 	width: min(100%, 30rem);
 	overflow: hidden;
 	margin-bottom: 3rem;
 	cursor: pointer;
 	@include var.neumorphic();
+
+	&::after {
+		content: "VIEW COUNTRY";
+		color: var.$white;
+		font-weight: var.$fontMedium;
+		font-size: 2rem;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+		width: 100%;
+		height: 65%;
+		text-align: center;
+		opacity: 0;
+		transition: 0.3s;
+	}
+
+	&:hover::after {
+		opacity: 100%;
+	}
 
 	> * {
 		padding: 0 2rem;
@@ -106,10 +131,15 @@ main {
 	> img {
 		padding: 0;
 		width: 100%;
+		transition: 0.3s;
 	}
 
 	&:last-of-type {
 		margin-bottom: 0;
+	}
+
+	&:hover > img {
+		filter: brightness(0.8);
 	}
 }
 
@@ -130,6 +160,7 @@ main {
 
 .pageNavigation {
 	margin: 2rem;
+	width: calc(100% - 4rem);
 	display: flex;
 	justify-content: space-between;
 

@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: white;
+  background: #fafafa;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
 }
 header > h1 {
@@ -28,9 +28,9 @@ button {
   background: transparent;
   border-radius: 0.7em;
   cursor: pointer;
-  background: linear-gradient(160deg, white, rgba(0, 0, 0, 0.02));
+  background: linear-gradient(160deg, #fafafa, rgba(0, 0, 0, 0.02));
   transform: translateY(-0.1em);
-  box-shadow: -0.2em -0.2em 1.2em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -0.2em -0.2em 1em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s, transform 0.1s;
 }
 button:hover {
