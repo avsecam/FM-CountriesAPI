@@ -14,14 +14,18 @@ let jsonData
 const countriesPerPage = 8
 
 app.get("/", async (req, res) => {
-	jsonData = await axios.get("https://restcountries.com/v3.1/all")
+	try {
+		jsonData = await axios.get("https://restcountries.com/v3.1/all")
+	} catch {
+		console.log("ERROR");
+	}
 	// jsonData = sampleJsonAll
 
 	// pagination
 	const pageCount = Math.ceil(jsonData.length / countriesPerPage)
 	let pageNumber = req.query.page ?? 0
 	if (pageNumber > pageCount) pageNumber = pageCount
-	res.render(
+	await res.render(
 		"allCountries",
 		{
 			data: jsonData.data.slice(pageNumber * countriesPerPage, (pageNumber * countriesPerPage) + countriesPerPage),
@@ -33,17 +37,18 @@ app.get("/", async (req, res) => {
 })
 
 app.get("/region/:region", async (req, res) => {
-	try{ 
+	try {
 		jsonData = await axios.get(`https://restcountries.com/v3.1/region/${req.params.region}`)
 	} catch {
 		console.log("ERROR");
 	}
 
+
 	// pagination
 	const pageCount = Math.ceil(jsonData.data.length / countriesPerPage)
 	let pageNumber = req.query.page ?? 0
 	if (pageNumber > pageCount) pageNumber = pageCount
-	res.render(
+	await res.render(
 		"allCountries",
 		{
 			data: jsonData.data.slice(pageNumber * countriesPerPage, (pageNumber * countriesPerPage) + 6),
@@ -54,11 +59,16 @@ app.get("/region/:region", async (req, res) => {
 	)
 })
 
-app.get("/country/:country", async (req, res) => {
-	jsonData = await axios.get(`https://restcountries.com/v3.1/name/${req.params.country}`)
+app.get(["/country", "/country/:country"], async (req, res) => {
+	try {
+		if (req.query.code) jsonData = await axios.get(`https://restcountries.com/v3.1/alpha/${req.query.code}`)
+		else jsonData = await axios.get(`https://restcountries.com/v3.1/name/${req.params.country}`)
+	} catch(e) {
+		console.log("ERROR country", req.query.code);
+	}
 	// jsonData = sampleJsonSingle
 	// res.render("country", {data: jsonData[0]})
-	res.render(
+	await res.render(
 		"country",
 		{
 			data: jsonData.data[0]

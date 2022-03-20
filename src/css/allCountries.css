@@ -86,22 +86,6 @@ main {
   height: 16.5rem;
 }
 
-@media screen and (min-aspect-ratio: 14/16) {
-  .searchAndFilters {
-    width: 90%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
-  .searchAndFilters .searchBarDiv {
-    width: 20rem !important;
-  }
-  .searchAndFilters .filterDropdown {
-    margin: 0;
-    width: 20rem;
-  }
-}
 .countries {
   display: flex;
   flex-direction: column;
@@ -161,23 +145,9 @@ main {
   margin-bottom: 0;
 }
 .country:hover > img {
-  filter: brightness(0.8);
+  filter: brightness(0.7);
 }
 
-@media screen and (min-aspect-ratio: 14/16) {
-  .countries {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0;
-  }
-
-  .country {
-    width: 20rem;
-    margin: 1rem !important;
-  }
-}
 .countryInfo {
   margin-bottom: 2rem;
 }
@@ -198,6 +168,36 @@ main {
   margin: 0 20vw;
   padding: 0.5rem 1.5rem;
   font-weight: 600;
+}
+
+@media screen and (min-aspect-ratio: 14/16) {
+  .searchAndFilters {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .searchAndFilters .searchBarDiv {
+    width: 20rem !important;
+  }
+  .searchAndFilters .filterDropdown {
+    margin: 0;
+    width: 20rem;
+  }
+
+  .countries {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+  }
+
+  .country {
+    width: 20rem;
+    margin: 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=allCountries.css.map */
