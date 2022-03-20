@@ -3,20 +3,24 @@ main {
   padding-top: 4rem;
 }
 
-.searchBarDiv {
+.searchAndFilters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.searchAndFilters .searchBarDiv {
   width: 100%;
   position: relative;
   box-shadow: 0 0 1rem 0 rgba(128, 128, 128, 0.1);
   background: #fafafa;
 }
-.searchBarDiv > i {
+.searchAndFilters .searchBarDiv > i {
   position: absolute;
   left: 2.5rem;
   top: 50%;
   transform: translateY(-50%);
 }
-
-.searchBar {
+.searchAndFilters .searchBar {
   border: none;
   background-color: #fafafa;
   height: 3.5rem;
@@ -25,16 +29,17 @@ main {
   border-radius: 0.2rem;
   outline-color: #858585;
 }
-
-.filterDropdown {
+.searchAndFilters .filterDropdown {
   position: relative;
+  width: 40%;
   background-color: #fafafa;
   font-weight: 600;
   align-self: flex-start;
   margin: 2rem 0;
   margin-bottom: 3rem;
+  padding: 2px;
 }
-.filterDropdown > h2 {
+.searchAndFilters .filterDropdown > h2 {
   font-size: 1rem;
   font-weight: inherit;
   margin: 0;
@@ -43,14 +48,14 @@ main {
   box-shadow: 0 0 1rem 0 rgba(128, 128, 128, 0.1);
   cursor: pointer;
 }
-.filterDropdown > h2::after {
+.searchAndFilters .filterDropdown > h2::after {
   content: "\f078";
   width: 1rem;
   height: 1rem;
   position: absolute;
   right: 2rem;
 }
-.filterDropdown > ul {
+.searchAndFilters .filterDropdown > ul {
   position: absolute;
   top: 2.8rem;
   list-style-type: none;
@@ -62,21 +67,37 @@ main {
   overflow: hidden;
   transition: 0.5s;
 }
-.filterDropdown > ul > li {
+.searchAndFilters .filterDropdown > ul > li {
   cursor: pointer;
   margin: 0.3em 0;
   padding: 0.5em 0;
   padding-left: 1em;
   transition: 0.2s;
 }
-.filterDropdown > ul > li:hover {
+.searchAndFilters .filterDropdown > ul > li:hover {
   color: #fafafa;
   background-color: #2b3945;
 }
-.filterDropdown > ul.open {
+.searchAndFilters .filterDropdown > ul.open {
   height: 16.5rem;
 }
 
+@media screen and (min-aspect-ratio: 14/16) {
+  .searchAndFilters {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .searchAndFilters .searchBarDiv {
+    width: 20rem !important;
+  }
+  .searchAndFilters .filterDropdown {
+    margin: 0;
+    width: 20rem;
+  }
+}
 .countries {
   display: flex;
   flex-direction: column;
@@ -95,6 +116,7 @@ main {
   transform: translateY(-0.1em);
   box-shadow: -0.2em -0.2em 1em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s, transform 0.1s;
+  background-color: #fafafa;
 }
 .country:hover {
   transform: translateY(0);
@@ -138,6 +160,19 @@ main {
   filter: brightness(0.8);
 }
 
+@media screen and (min-aspect-ratio: 14/16) {
+  .countries {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .country {
+    width: 20rem;
+    margin: 1rem !important;
+  }
+}
 .countryInfo {
   margin-bottom: 2rem;
 }
@@ -150,13 +185,14 @@ main {
 }
 
 .pageNavigation {
-  margin: 2rem;
-  width: calc(100% - 4rem);
+  margin: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .pageNavigation > button {
+  margin: 0 20vw;
   padding: 0.5rem 1.5rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=allCountries.css.map */

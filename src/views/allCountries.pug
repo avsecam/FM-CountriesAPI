@@ -4,18 +4,19 @@ style
 body
 	include ../includes/header.pug
 	main(data-page=pageNumber)
-		.searchBarDiv
-			input.searchBar(type="text" placeholder="Search for a country...")
-			i.fa-regular.fa-eye
-		.filterDropdown
-			h2 Filter by Region
-			ul
-				li Africa
-				li America
-				li Asia
-				li Europe
-				li Oceania
-				li All
+		.searchAndFilters
+			.searchBarDiv
+				input.searchBar(type="text" placeholder="Search for a country...")
+				i.fa-regular.fa-eye
+			.filterDropdown
+				h2 Filter by Region
+				ul
+					li Africa
+					li America
+					li Asia
+					li Europe
+					li Oceania
+					li All
 
 		.countries
 			each country in data
