@@ -11,7 +11,7 @@ app.set("views", "./src/views")
 app.set("view engine", "pug")
 
 let jsonData
-const countriesPerPage = 6
+const countriesPerPage = 8
 
 app.get("/", async (req, res) => {
 	jsonData = await axios.get("https://restcountries.com/v3.1/all")
@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
 	res.render(
 		"allCountries",
 		{
-			data: jsonData.data.slice(pageNumber * countriesPerPage, (pageNumber * countriesPerPage) + 6),
+			data: jsonData.data.slice(pageNumber * countriesPerPage, (pageNumber * countriesPerPage) + countriesPerPage),
 			pageNumber,
 			previous: (pageNumber > 0) ? true : false,
 			next: (pageNumber != pageCount - 1) ? true : false
