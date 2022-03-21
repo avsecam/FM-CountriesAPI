@@ -24,12 +24,14 @@ document.body.onload = () => {
 	if (!localStorage.getItem("darkTheme")) {
 		localStorage.setItem("darkTheme", "false")
 	} else {
+		icon.classList.remove("fa-sun")
+		icon.classList.remove("fa-moon")
 		if (localStorage.getItem("darkTheme") === "true") {
 			document.body.classList.add("darkTheme")
-			icon.classList.replace("fa-sun", "fa-moon")
+			icon.classList.add("fa-moon")
 		} else {
 			document.body.classList.remove("darkTheme")
-			icon.classList.replace("fa-moon", "fa-sun")
+			icon.classList.add("fa-sun")
 		}
 	}
 }
