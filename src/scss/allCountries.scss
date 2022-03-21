@@ -62,6 +62,8 @@ main {
 			cursor: pointer;
 
 			&::after {
+				font-family: "Font Awesome 6 Free";
+				font-weight: 900;
 				content: "\f078";
 				width: 1rem;
 				height: 1rem;
