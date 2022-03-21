@@ -166,6 +166,7 @@ main {
 
 .pageNavigation {
   margin: 2rem 0;
+  width: 90%;
   display: flex;
   justify-content: center;
 }
