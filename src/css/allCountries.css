@@ -23,6 +23,10 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.2s;
+}
+.searchAndFilters .searchBarDiv > i:hover {
+  transform: scale(1.2);
 }
 .searchAndFilters .searchBar {
   border: none;
@@ -30,7 +34,6 @@ main {
   height: 3.5rem;
   margin-left: 6rem;
   width: calc(100% - 6rem);
-  border-radius: 0.2rem;
   outline-color: #858585;
 }
 .searchAndFilters .filterDropdown {
@@ -61,12 +64,14 @@ main {
 }
 .searchAndFilters .filterDropdown > ul {
   position: absolute;
-  top: 2.8rem;
+  top: 3.5rem;
+  left: 0;
   list-style-type: none;
   padding: 0;
   height: 0;
   width: 100%;
   background-color: #fafafa;
+  box-shadow: inherit;
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
@@ -100,15 +105,15 @@ main {
   overflow: hidden;
   margin-bottom: 3rem;
   cursor: pointer;
-  background: linear-gradient(160deg, #fafafa, rgba(0, 0, 0, 0.02));
   transform: translateY(-0.1em);
+  transition: box-shadow 0.2s, transform 0.1s, background 0.2s;
+  background: linear-gradient(160deg, #fafafa, rgba(0, 0, 0, 0.02));
   box-shadow: -0.2em -0.2em 1em 0 white, 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.2s, transform 0.1s;
   background-color: #fafafa;
 }
 .country:hover {
   transform: translateY(0);
-  box-shadow: -0.1em -0.1em 0.4em 0 white, 0.1em 0.1em 0.4em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 .country:active {
   transform: translateY(0.1em);
@@ -166,8 +171,9 @@ main {
 }
 .pageNavigation > button {
   margin: 0 20vw;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 @media screen and (min-aspect-ratio: 14/16) {
@@ -198,6 +204,43 @@ main {
     width: 20rem;
     margin: 1rem !important;
   }
+}
+.darkTheme .country {
+  transform: translateY(-0.1em);
+  transition: box-shadow 0.2s, transform 0.1s, background 0.2s;
+  background: linear-gradient(160deg, rgba(128, 128, 128, 0.1), rgba(0, 0, 0, 0.1));
+  box-shadow: -0.2em -0.2em 1em 0 rgba(128, 128, 128, 0.05), 0.2em 0.2em 0.6em 0 rgba(0, 0, 0, 0.3);
+  background-color: #2b3945;
+}
+.darkTheme .country:hover {
+  transform: translateY(0);
+  box-shadow: none;
+}
+.darkTheme .country:active {
+  transform: translateY(0.1em);
+  box-shadow: inset -0.3em -0.3em 0.7em 0 rgba(77, 77, 77, 0.2), inset 0.2em 0.2em 0.3em 0 rgba(0, 0, 0, 0.3);
+}
+.darkTheme .searchBarDiv {
+  box-shadow: 0 0 1rem 0 rgba(26, 26, 26, 0.5);
+  background: #2b3945;
+}
+.darkTheme .searchBarDiv .searchBar {
+  background: inherit;
+  color: #fafafa;
+}
+.darkTheme .searchBarDiv .searchBar::placeholder {
+  color: inherit;
+}
+.darkTheme .filterDropdown {
+  box-shadow: 0 0 1rem 0 rgba(26, 26, 26, 0.5);
+  background: #2b3945;
+}
+.darkTheme .filterDropdown > ul {
+  background: #2b3945;
+}
+.darkTheme .filterDropdown > ul li:hover {
+  background-color: #fafafa;
+  color: #2b3945;
 }
 
 /*# sourceMappingURL=allCountries.css.map */

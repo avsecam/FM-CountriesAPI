@@ -35,15 +35,7 @@ button {
 	background: transparent;
 	border-radius: 0.7em;
 	cursor: pointer;
-	@include var.neumorphicIdle();
-	
-		&:hover {
-			@include var.neumorphicHover();
-		}
-
-		&:active {
-			@include var.neumorphicActive();
-		}
+	@include var.neumorphic("light");
 
 		> i {
 			margin-right: 0.5rem;
@@ -62,6 +54,20 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.darkTheme {
+	background: var.$gray900;
+	color: var.$white;
+
+	header {
+		background: var.$gray700;
+	}
+
+	button {
+		color: var.$white;
+		@include var.neumorphic("dark");
+	}
 }
 
 @media screen and (min-aspect-ratio: 14/16) {

@@ -25,6 +25,11 @@ main {
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+			transition: 0.2s;
+
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 	}
 
@@ -34,7 +39,6 @@ main {
 		height: 3.5rem;
 		margin-left: 6rem;
 		width: calc(100% - 6rem);
-		border-radius: 0.2rem;
 		outline-color: var.$gray200;
 	}
 
@@ -68,12 +72,14 @@ main {
 		
 		> ul {
 			position: absolute;
-			top: 2.8rem;
+			top: 3.5rem;
+			left: 0;
 			list-style-type: none;
 			padding: 0;
 			height: 0;
 			width: 100%;
 			background-color: var.$white;
+			box-shadow: inherit;
 			z-index: 1;
 			overflow: hidden;
 			transition: 0.5s;
@@ -112,7 +118,7 @@ main {
 	overflow: hidden;
 	margin-bottom: 3rem;
 	cursor: pointer;
-	@include var.neumorphic();
+	@include var.neumorphic("light");
 	background-color: var.$white;
 
 	&::after {
@@ -177,8 +183,9 @@ main {
 
 	> button {
 		margin: 0 20vw;
-		padding: 0.5rem 1.5rem;
+		padding: 0.8rem 1.5rem;
 		font-weight: var.$fontMedium;
+		font-size: 1rem;
 	}
 }
 
@@ -210,5 +217,40 @@ main {
 	.country {
 		width: 20rem;
 		margin: 1rem !important;
+	}
+}
+
+.darkTheme {
+	.country {
+		@include var.neumorphic("dark");
+		background-color: var.$gray700;
+	}
+
+	.searchBarDiv {
+		box-shadow: 0 0 1rem 0 hsla(0, 0%, 10%, 50%);
+		background: var.$gray700;
+
+		.searchBar {
+			background: inherit;
+			color: var.$white;
+			
+			&::placeholder {
+				color: inherit
+			}
+		}
+	}
+
+	.filterDropdown {
+		box-shadow: 0 0 1rem 0 hsla(0, 0%, 10%, 50%);
+		background: var.$gray700;
+
+		> ul {
+			background: var.$gray700;
+
+			li:hover {
+				background-color: var.$white;
+				color: var.$gray700;
+			}
+		}
 	}
 }
