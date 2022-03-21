@@ -7,7 +7,7 @@ body
 		button.backButton
 			i.fa-solid.fa-arrow-left
 			span Back
-		img.countryFlag(src=`${data.flags.svg}`)
+		img.countryFlag(src=`${data.flags.svg}` alt=`${data.name.official}`)
 		.countryInfo
 			h2.countryName #{data.name.official}
 			.countryDetails

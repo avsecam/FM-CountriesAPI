@@ -21,7 +21,7 @@ body
 		.countries
 			each country in data
 				.country
-					img(src=`${country.flags.svg}`)
+					img(src=`${country.flags.svg}` alt=`${country.name.common}`)
 					h2 #{country.name.common}
 					.countryInfo
 						.detail
