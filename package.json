@@ -15,11 +15,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
-    "pug": "^3.0.2",
     "sass": "^1.49.9"
   }
 }
