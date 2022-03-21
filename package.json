@@ -1,11 +1,15 @@
 {
   "name": "where-in-the-world",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)",
   "main": "src/index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "watch": "sass -w ./src/scss:./src/css",
-    "express": "nodemon ./src/index.js"
+    "express": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "author": "avsecam",
   "license": "ISC",
