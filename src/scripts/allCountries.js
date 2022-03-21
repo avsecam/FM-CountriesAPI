@@ -7,6 +7,7 @@ const filterDropdown = document.querySelector(".filterDropdown")
 const dropdownList = filterDropdown.querySelector("ul")
 
 filterDropdown.addEventListener("click", () => {
+	filterDropdown.classList.toggle("open")
 	dropdownList.classList.toggle("open")
 })
 

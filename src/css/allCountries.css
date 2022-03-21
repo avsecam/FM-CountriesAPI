@@ -63,6 +63,10 @@ main {
   height: 1rem;
   position: absolute;
   right: 2rem;
+  transition: 0.5s;
+}
+.searchAndFilters .filterDropdown.open > h2::after {
+  transform: rotate(180deg);
 }
 .searchAndFilters .filterDropdown > ul {
   position: absolute;
