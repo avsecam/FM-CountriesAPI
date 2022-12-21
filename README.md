@@ -7,7 +7,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 ## Links
 
 - [GitHub](https://github.com/avsecam/FM-CountriesAPI)
-- [Live Site](https://avsecam-fm-countries-api.herokuapp.com/)
+- [Live Site](https://fm-countries.onrender.com/)
 
 ## Built with
 
